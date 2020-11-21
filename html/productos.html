@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- LINK BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- LINK PERSONALIZADO -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- LINK ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- SCRIPT BARRA LATERAL -->
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+</head>
+<body>
+    <!-- NAVEGACION -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+         <a class="navbar-brand" href="/index.html">
+           <img src="../img/logo_small_icon_only.png" alt="logo de la pagina" class="logo-nav">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../html/productos.html">Productos</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../html/contacto.html">Contacto</a>
+             </li>
+           </ul>
+         </div>
+        </div>
+      </nav>
+       <!-- ASIDE -->
+      <div class="container-fluid">
+         <div class="row">
+          <nav class="col-md-2 d-none d-xl-block sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    Tablero <span class="sr-only"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                    Pedidos
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    Productos
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    Clientes
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    Reportes
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    Integracion
+                  </a>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Guardar reporte</span>
+                <a class="d-flex align-items-center text-muted" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                </a>
+              </h6>
+            </div>
+          </nav>
+          <!-- SECCION -->
+         <section class="col-md-9 ml-sm-auto col-lg-10 px-4">
+           <div class="container-box text-center p-5">
+              <div class=" row row-cols-1 row-cols-md-8">
+                <img src="../img/Nvidia-GeForce.jpg" class="img-fluid p-1" alt="placa de video">
+                <h2><strong>NVIDIA GeForce RTX 3080: su monstruoso rendimiento da al 'ray tracing' el impulso necesario para despegar definitivamente.</strong></h2>
+                <p>Las nuevas tarjetas gráficas de esta compañía llegan con la firme intención de reconciliar <strong>la resolución 4K y el <em>ray tracing</em></strong>. El esfuerzo que una GPU debe afrontar para generar las imágenes que vemos en nuestro monitor a una resolución tan alta utilizando <a href="https://www.xataka.com/componentes/nvidia-no-da-puntada-hilo-asi-funciona-ray-tracing-sus-geforce-rtx-que-nos-coloca-puertas-fotorrealismo">el renderizado por trazado de rayos</a> es enorme, por lo que sostener una cadencia de al menos 60 fotogramas por segundo en estas condiciones no es nada fácil. Pero, según NVIDIA, su arquitectura Ampere lo consigue. Este análisis nos ayudará a averiguar si esto es cierto.</p>
+             </div>
+             <footer>
+               <button type="button" class="btn btn-light float-left">
+                 Me gusta <span class="badge badge-dark">0</span>
+                 <span class="sr-only">unread messages</span>
+               </button>
+             </footer>
+            </div>
+           <div class="container-box text-center p-5">
+             <div class=" row row-cols-1 row-cols-md-8">
+              <img src="../img/auriculares-bluetooth.jpg" class="img-fluid p-1" alt="auriculares-bluetooth">
+              <h2> <strong>Samsung Galaxy Buds Live: que su peculiar forma de habichuela no nos distraiga de su calidad de sonido.</strong></h2>
+              <p>Un diseño peculiar, una calidad de sonido sorprendentemente buena y muchas luces y sombras: así son los <strong>Samsung Galaxy Buds Live</strong>.</p>
+             </div>
+             <footer>
+              <button type="button" class="btn btn-light float-left">
+               Me gusta <span class="badge badge-dark">0</span>
+                <span class="sr-only">unread messages</span>
+              </button>
+             </footer>
+            </div>
+              <div class="container-box text-center p-5">
+               <div class=" row row-cols-1 row-cols-md-8">
+                   <img src="../img/notebook-surface.jpg" class="img-fluid p-1" alt="notebook-surface">
+                   <h2> <strong>Surface Book 3: la construcción es impecable, pero el rendimiento no lo es en un equipo que necesita reinventarse</strong></h2>
+                   <p> <strong>El portátil convertible de Microsoft</strong> se condena a sí mismo y reduce cada vez más el nicho de usuarios que pueden sacarle partido.</p>
+               </div>
+               <footer>
+                 <button type="button" class="btn btn-light float-left">
+                   Me gusta <span class="badge badge-dark">0</span>
+                   <span class="sr-only">unread messages</span>
+                 </button>
+               </footer>
+             </div>
+          </section>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>
+        <div class="p-3 estilo-footer">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <p class="float-right"><a href="#">ir arriba</a></p>
+          <p>© 2017-2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+      </footer>
+      <!-- JAVASCRIPT BOOTSTRAP -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="../js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
