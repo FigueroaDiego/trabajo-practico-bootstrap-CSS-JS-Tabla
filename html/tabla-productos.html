@@ -10,6 +10,8 @@
      <link rel="stylesheet" href="../css/estilos.css">
      <!-- LINK ICONOS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- LINK TABLA-ICONOS -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!-- NAVEGACION -->
@@ -24,7 +26,7 @@
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ml-auto">
              <li class="nav-item">
-               <a class="nav-link" href="./index.html">Home</a>
+               <a class="nav-link" href="/index.html">Home</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="../html/productos.html">Productos</a>
@@ -33,12 +35,131 @@
                <a class="nav-link" href="../html/contacto.html">Contacto</a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" href="../html/tabla-productos.html">Contacto</a>  
+                <a class="nav-link" href="../html/tabla-productos.html">Tabla-productos</a>  
              </li>
            </ul>
          </div>
         </div>
        </nav>
+       <!-- TABLA -->
+       <div class="datatable-container">
+           <div class="header-tools">
+               <div class="tools">
+                   <ul>
+                       <li><span><input type="ckeckbox"></span></li>
+                       <li>
+                           <button>
+                               <i class="material-icons">add_circle</i>
+                           </button>
+                       </li>
+                       <li>
+                        <button>
+                            <i class="material-icons">edit</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">share</i>
+                        </button>
+                    </li>
+                   </ul>
+               </div>
+               <div class="search">
+                   <input type="text"  name="" id="" class="search-input">
+               </div>
+           </div>
+           <table>
+               <thead>
+                   <tr>
+                       <th></th>
+                       <th>Status</th>
+                       <th>Name</th>
+                       <th>position</th>
+                       <th>Office</th>
+                       <th>Age</th>
+                       <th>Date</th>
+                   </tr>
+               </thead>
+
+               <tbody>
+                   <tr>
+                       <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                       <td><span class="available"></span></td>
+                       <td>Marcos Rivas</td>
+                       <td>CEO</td>
+                       <td>San Francisco</td>
+                       <td>28</td>
+                       <td>05/01/2020</td>
+                   </tr>
+                   <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                    <td><span class="available"></span></td>
+                    <td>Marcos Rivas</td>
+                    <td>CEO</td>
+                    <td>San Francisco</td>
+                    <td>28</td>
+                    <td>05/01/2020</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                    <td><span class="available"></span></td>
+                    <td>Marcos Rivas</td>
+                    <td>CEO</td>
+                    <td>San Francisco</td>
+                    <td>28</td>
+                    <td>05/01/2020</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                    <td><span class="available"></span></td>
+                    <td>Marcos Rivas</td>
+                    <td>CEO</td>
+                    <td>San Francisco</td>
+                    <td>28</td>
+                    <td>05/01/2020</td>
+                </tr>
+               </tbody>
+
+           </table>
+           <div class="footer-tools">
+               <div class="list-items">
+                   <select name="n-entries" id="n-entries" class="n-entries">
+                       <option value="15">5</option>
+                       <option value="10" selected>10</option>
+                       <option value="15">15</option>
+                   </select>
+                   entries
+               </div>
+               <div class="pages">
+                   <ul>
+                       <li><span class="active">1</span></li>
+                       <li><button>2</button></li>
+                       <li><button>3</button></li>
+                       <li><button>4</button></li>
+                       <li><span>...</span></li>
+                       <li><button>9</button></li>
+                       <li><button>10</button></li>
+
+                   </ul>
+               </div>
+               
+           </div>
+       </div>
+       <!-- FOOTER -->
+       <footer>
+        <div class="p-3 estilo-footer">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <p class="float-right"><a href="#">ir arriba</a></p>
+          <p>© 2017-2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+      </footer>
  <!-- JAVASCRIPT BOOTSTRAP -->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
