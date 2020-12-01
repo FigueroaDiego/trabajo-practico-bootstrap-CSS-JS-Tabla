@@ -35,7 +35,7 @@
                <a class="nav-link" href="../html/contacto.html">Contacto</a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" href="../html/tabla-productos.html">Tabla-productos</a>  
+                <a class="nav-link" href="../html/tabla-productos.html">Tabla-Productos</a>  
              </li>
            </ul>
          </div>
@@ -43,68 +43,50 @@
        </nav>
        <!-- TABLA -->
        <div class="datatable-container">
-           <div class="header-tools">
-               <div class="tools">
-                   <ul>
-                       <li><span><input type="ckeckbox"></span></li>
-                       <li>
-                           <button>
-                               <i class="material-icons">add_circle</i>
-                           </button>
-                       </li>
-                       <li>
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span><input type="ckeckbox"></span></li>
+                    <li>
                         <button>
-                            <i class="material-icons">edit</i>
+                            <i class="material-icons">add_circle</i>
                         </button>
                     </li>
                     <li>
-                        <button>
-                            <i class="material-icons">delete</i>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <i class="material-icons">share</i>
-                        </button>
-                    </li>
-                   </ul>
-               </div>
-               <div class="search">
-                   <input type="text"  name="" id="" class="search-input">
-               </div>
-           </div>
-           <table>
-               <thead>
-                   <tr>
-                       <th></th>
-                       <th>Status</th>
-                       <th>Name</th>
-                       <th>position</th>
-                       <th>Office</th>
-                       <th>Age</th>
-                       <th>Date</th>
-                   </tr>
-               </thead>
-
-               <tbody>
-                   <tr>
-                       <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
-                       <td><span class="available"></span></td>
-                       <td>Marcos Rivas</td>
-                       <td>CEO</td>
-                       <td>San Francisco</td>
-                       <td>28</td>
-                       <td>05/01/2020</td>
-                   </tr>
-                   <tr>
-                    <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
-                    <td><span class="available"></span></td>
-                    <td>Marcos Rivas</td>
-                    <td>CEO</td>
-                    <td>San Francisco</td>
-                    <td>28</td>
-                    <td>05/01/2020</td>
+                     <button>
+                         <i class="material-icons">edit</i>
+                     </button>
+                 </li>
+                 <li>
+                     <button>
+                         <i class="material-icons">delete</i>
+                     </button>
+                 </li>
+                 <li>
+                     <button>
+                         <i class="material-icons">share</i>
+                     </button>
+                 </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text"  name="" id="" class="search-input">
+            </div>
+        </div>
+        <table class="datatable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Status</th>
+                    <th>Name</th>
+                    <th>position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Date</th>
                 </tr>
+            </thead>
+
+            <tbody>
                 <tr>
                     <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
                     <td><span class="available"></span></td>
@@ -115,6 +97,23 @@
                     <td>05/01/2020</td>
                 </tr>
                 <tr>
+                 <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                 <td><span class="available"></span></td>
+                 <td>Marcos Rivas</td>
+                 <td>CEO</td>
+                 <td>San Francisco</td>
+                 <td>28</td>
+                 <td>05/01/2020</td>
+             </tr>
+             <tr>
+                 <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                 <td><span class="offline"></span></td>
+                 <td>Marcos Rivas</td>
+                 <td>CEO</td>
+                 <td>San Francisco</td>
+                 <td>28</td>
+                 <td>05/01/2020</td>
+                 <tr>
                     <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
                     <td><span class="available"></span></td>
                     <td>Marcos Rivas</td>
@@ -123,33 +122,60 @@
                     <td>28</td>
                     <td>05/01/2020</td>
                 </tr>
-               </tbody>
+                <tr>
+                 <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                 <td><span class="available"></span></td>
+                 <td>Marcos Rivas</td>
+                 <td>CEO</td>
+                 <td>San Francisco</td>
+                 <td>28</td>
+                 <td>05/01/2020</td>
+             </tr>
+             <tr>
+                 <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                 <td><span class="offline"></span></td>
+                 <td>Marcos Rivas</td>
+                 <td>CEO</td>
+                 <td>San Francisco</td>
+                 <td>28</td>
+                 <td>05/01/2020</td>
+             </tr>
+             <tr>
+                 <td class="table-checkbox"><input type="checkbox" name="" id="" ></td>
+                 <td><span class="away"></span></td>
+                 <td>Marcos Rivas</td>
+                 <td>CEO</td>
+                 <td>San Francisco</td>
+                 <td>28</td>
+                 <td>05/01/2020</td>
+             </tr>
+            </tbody>
 
-           </table>
-           <div class="footer-tools">
-               <div class="list-items">
-                   <select name="n-entries" id="n-entries" class="n-entries">
-                       <option value="15">5</option>
-                       <option value="10" selected>10</option>
-                       <option value="15">15</option>
-                   </select>
-                   entries
-               </div>
-               <div class="pages">
-                   <ul>
-                       <li><span class="active">1</span></li>
-                       <li><button>2</button></li>
-                       <li><button>3</button></li>
-                       <li><button>4</button></li>
-                       <li><span>...</span></li>
-                       <li><button>9</button></li>
-                       <li><button>10</button></li>
+        </table>
+        <div class="footer-tools">
+            <div class="list-items">
+                <select name="n-entries" id="n-entries" class="n-entries">
+                    <option value="15">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                </select>
+                entries
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><span class="active">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><span>...</span></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
 
-                   </ul>
-               </div>
-               
-           </div>
-       </div>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
        <!-- FOOTER -->
        <footer>
         <div class="p-3 estilo-footer">
