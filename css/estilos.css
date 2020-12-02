@@ -569,3 +569,7 @@ background-color: rgba(223, 230, 233,.9);
 .datatable-container .datatable tbody tr:hover{
     background-color: var(--dt-hover-cell-color);
 }
+
+.datatable-container .datatable tbody tr .table-checkbox{
+    width: 1px;
+}
