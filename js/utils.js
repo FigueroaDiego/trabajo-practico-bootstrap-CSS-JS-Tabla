@@ -1,4 +1,6 @@
-{
+let tabla = document.getElementById("data-table");
+
+let datos = `{
     "productos": [
         {
             "Tipo": "Escritorio",
@@ -161,4 +163,8 @@
             "Consumo de energia": "250 W"
         }
     ]
-}
+}`
+
+let datosProductos = JSON.parse(datos);
+
+let componentesProductos = Object.keys(dataParseada.productos[0]);
