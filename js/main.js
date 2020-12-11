@@ -11,3 +11,5 @@ let createHeader = (claves) => {
   theadEl.appendChild(trEl);
   tableEl.appendChild(theadEl);
 };
+
+console.log(createHeader);
