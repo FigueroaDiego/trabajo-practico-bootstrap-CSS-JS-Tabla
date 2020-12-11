@@ -1,15 +1,8 @@
-'use strict'
-
-let createHeader = (claves) => {
-  let theadEl = document.createElement("thead");
-  let trEl = document.createElement("tr");
-  for (let i = 0; i < claves.length; i++) {
-    let thEl = document.createElement("th");
-    thEl.innerHTML = claves[i];
-    trEl.appendChild(thEl);
-}
-  theadEl.appendChild(trEl);
-  tableEl.appendChild(theadEl);
-};
-
-console.log(createHeader);
+$(document).ready(function() {
+  var table = $('#example').DataTable();
+   
+  $('#example tbody').on('click', 'tr', function () {
+      var data = table.row( this ).data();
+      alert( 'You clicked on '+data[0]+'\'s row' );
+  } );
+} );
