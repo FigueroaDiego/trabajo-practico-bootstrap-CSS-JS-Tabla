@@ -46,11 +46,84 @@
        <div class="container">
          <div class="row">
            <div class="col-lg-12">
-             <div class="table-responsive">
-             </div>
+             <button id="btnNuevo" type="button" class="btn btn-success">Nuevo</button>
            </div>
          </div>
        </div>
+
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="table-responsive">
+              <table id="tabla-productos" class="table table-striped table-bordered table-condensed " style="width: 100;">
+                <thead class="text-center">
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Pais</th>
+                    <th>Edad</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="text-center">
+                        <div class="btn-group">
+                          <button class="btn btn-primary btnEditar">Editar</button>
+                          
+                          <button class="btn btn-danger btnEditar">Borrar</button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <form id="formPersonas">    
+                <div class="modal-body">
+                    <div class="form-group">
+                    <label for="nombre" class="col-form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group">
+                    <label for="pais" class="col-form-label">País:</label>
+                    <input type="text" class="form-control" id="pais">
+                    </div>                
+                    <div class="form-group">
+                    <label for="edad" class="col-form-label">Edad:</label>
+                    <input type="number" class="form-control" id="edad">
+                    </div>            
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                </div>
+            </form>    
+            </div>
+        </div>
+    </div>  
+          
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="jquery/jquery-3.3.1.min.js"></script>
+        <script src="popper/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
  <!-- JAVASCRIPT BOOTSTRAP -->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
