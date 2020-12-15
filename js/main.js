@@ -1,4 +1,5 @@
 let table = document.getElementById("tablaBody");
+let btnNuevo = document.getElementById("btnNuevo");
 
 
 function traer(){    
@@ -31,3 +32,5 @@ function tabla(datos){
                     `
     }
 }
+
+btnNuevo.addEventListener("click" , traer);
