@@ -1,5 +1,3 @@
-
-
 let table = document.getElementById("tablaBody");
 
 
