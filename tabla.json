@@ -1,0 +1,163 @@
+[
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 3090",
+            "rendimiento": 100.00,
+            "arquitectura": "Ampere",
+            "año": 2020,
+            "consumo": "350 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "AMD Radeon RX 6800 XT",
+            "rendimiento": 99.91,
+            "arquitectura": "Navi / RDNA2",
+            "año": 2020,
+            "consumo": "300 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 3080",
+            "rendimiento": 94.47,
+            "arquitectura": "Ampere",
+            "año": 2020,
+            "consumo": "320 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 2080 Ti",
+            "rendimiento": 86.21,
+            "arquitectura": "Turing",
+            "año": 2018,
+            "consumo": "250 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 3070",
+            "rendimiento": 85.46,
+            "arquitectura": "Ampere",
+            "año": 2020,
+            "consumo ": "220 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "AMD Radeon RX 6800",
+            "rendimiento": 85.41,
+            "arquitectura": "Navi / RDNA2",
+            "año": 2020,
+            "consumo": "250 W"
+        },
+        {
+            "tipo": "Estaciones de trabajo",
+            "tarjeta": "NVIDIA Quadro RTX 8000",
+            "rendimiento": 81.77,
+            "arquitectura": "Turing",
+            "año ": 2018,
+            "consumo": "260 W"
+        },
+        {
+            "tipo": "Estaciones de trabajo",
+            "tarjeta": "NVIDIA Quadro RTX 6000",
+            "rendimiento": 80.04,
+            "arquitectura": "Turing",
+            "año": 2018,
+            "consumo": "260 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce GTX 1080 SLI (móvel)",
+            "rendimiento": 77.81,
+            "arquitectura": "Pascal",
+            "año": 2016,
+            "consumo": "-"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 2080 Super",
+            "rendimiento": 77.59,
+            "arquitectura": "Turing",
+            "año ": 2019,
+            "consumo": "250 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta Grafica": "NVIDIA TITAN RTX",
+            "rendimiento": 75.32,
+            "arquitectura": "Turing",
+            "año": 2018,
+            "consumo": "280 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 2080",
+            "rendimiento": 74.14,
+            "arquitectura": "Turing",
+            "año": 2018,
+            "consumo": "215 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce RTX 2070 Super",
+            "rendimiento": 72.37,
+            "arquitectura": "Turing",
+            "año": 2019,
+            "consumo": "215 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce GTX 1080 Ti",
+            "rendimiento": 70.51,
+            "arquitectura": "Pascal",
+            "año": 2017,
+            "consumo": "250 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA GeForce GTX 1070 SLI",
+            "rendimiento": 70.51,
+            "arquitectura": "Pascal",
+            "año": 2016,
+            "consumo": "300 W"
+        },
+        {
+            "tipo": "Estaciones de trabajo",
+            "tarjeta": "AMD Radeon Pro VII",
+            "rendimiento": 68.81,
+            "arquitectura": "GCN 5.1",
+            "año": 2020,
+            "consumo": "250 W"
+        },
+        {
+            "tipo": "Para los portatiles",
+            "tarjeta": "NVIDIA GeForce GTX 1070 SLI (móvel)",
+            "rendimiento": 68.40,
+            "arquitectura": "Pascal",
+            "año": 2016,
+            "consumo": "−"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "NVIDIA TITAN V",
+            "rendimiento": 68.40,
+            "arquitectura": "Volta",
+            "año": 2017,
+            "consumo": "250 W"
+        },
+        {
+            "tipo": "Escritorio",
+            "tarjeta": "AMD Radeon VII",
+            "rendimiento": 68.02,
+            "arquitectura": "Vega",
+            "año": 2019,
+            "consumo": "295 W"
+        },
+        {
+            "tipo": "Para los portatiles",
+            "tarjeta": "NVIDIA TITAN V CEO Edition",
+            "rendimiento": 67.85,
+            "arquitectura": "Volta",
+            "año": 2018,
+            "consumo": "250 W"
+        }
+    ]
+    
