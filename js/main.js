@@ -1,6 +1,6 @@
 let table = document.getElementById("tablaBody");
 let btnNuevo = document.getElementById("btnNuevo");
-
+//Con el metodo fech me traigo el archivo JSON 
 function traer(){    
     fetch('/tabla.json')
        .then(res=> res.json())
@@ -8,7 +8,7 @@ function traer(){
            tabla(datos)
        })
 }
-
+//Se creo la funcion tabla para que todos esos datos traidos se creen en una tabla dinamica
 function tabla(datos){
     table.innerHTML = ''
     for(let valor of datos){
@@ -31,19 +31,16 @@ function tabla(datos){
                     `
     }
 }
-
 btnNuevo.addEventListener("click" , traer);
 
 
 $(document).ready(function(){ 
   tablaProductos = $("#tablaProductos")
 
-  
-    
-  
-  let fila; //capturar la fila para editar o borrar el registro
+  let fila; //capturar la fila para editar o borrar el producto
     //botón EDITAR    
-  $(document).on("click",".btnEditar",function(){
+  $(document).on("click",".btnEditar",function(e){
+    e.preventDefault
     fila = $(this).closest("tr");
     tipo = fila.find('td:eq(0)').text();
     tarjeta = fila.find('td:eq(1)').text();
@@ -54,7 +51,7 @@ $(document).ready(function(){
 
 
 
-    
+    //Trate de que con el metodo value me devuelva los valores modificados 
     $("#tipo-producto").val(tipo);
     $("#tarjeta-producto").val(tarjeta);
     $("#rendimiento-producto").val(rendimiento);
@@ -62,6 +59,7 @@ $(document).ready(function(){
     $("#año-producto").val(año);
     $("#consumo-producto").val(consumo);
     
+    //Estilos del modal
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
     $(".modal-title").text("Editar placa");            
@@ -72,8 +70,8 @@ $(document).ready(function(){
   //botón BORRAR
   $(document).on("click", ".btnBorrar", function(){    
     fila = $(this);
-    tipo = $(this).closest("tr").find('td:eq(0)').text();
-    let respuesta = confirm("¿Está seguro de eliminar el registro: "+tipo+"?");
+    tarjeta = $(this).closest("tr").find('td:eq(1)').text();
+    let respuesta = confirm("¿Está seguro de eliminar el producto: "+tarjeta+"?");
     if(respuesta){
       tablaProductos.row(fila.parents('tr')).remove().draw();
             }   
@@ -82,16 +80,26 @@ $(document).ready(function(){
   
   $("#formProductos").submit(function(e){
     e.preventDefault();    
-    tipo = $.trim($("#tipo-producto").val());
-    tarjeta = $.trim($("#tarjeta-producto").val());
-    rendimiento = $.trim($("#rendimiento-producto").val());
-    arquitectura = $.trim($("#arquitectura-producto").val());
-    año = $.trim($("#año-producto").val());
-    consumo = $.trim($("#consumo-producto").val());
     
     $("#modalTable").modal("hide");    
   
-  });    
+  });  
+
+  //Se utiliza la funcion SetInterval para la progress bar 
+  
+  $("#btnNuevo").click(function(){
+    let progreso = 0
+    let intervalo = setInterval(function(){
+      progreso = progreso + 10; 
+      $("#barra").css("width", progreso + "%").attr("aria-valuenow", progreso);
+      if(progreso>= 100){
+        clearInterval(intervalo);
+      }
+    },200);
+  });
+  
+  
+  
 
 });    
 
