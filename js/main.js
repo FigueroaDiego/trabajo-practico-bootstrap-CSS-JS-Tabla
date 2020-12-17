@@ -78,7 +78,6 @@ $(document).ready(function(){
     $("#arquitectura-producto").val(arquitectura);
     $("#año-producto").val(año);
     $("#consumo-producto").val(consumo);
-    opcion = 2; //editar
     
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white");
@@ -91,7 +90,6 @@ $(document).ready(function(){
   $(document).on("click", ".btnBorrar", function(){    
     fila = $(this);
     tipo = $(this).closest("tr").find('td:eq(0)').text();
-    opcion = 3 //borrar
     let respuesta = confirm("¿Está seguro de eliminar el registro: "+tipo+"?");
     if(respuesta){
         $.ajax({
